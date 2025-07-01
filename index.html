@@ -4,15 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simulador de Cafetería</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <h1>Simulador de Cafetería</h1>
-  <p>
-    Este simulador permite al usuario realizar un pedido personalizado de café:
-    podrá elegir tipo, tamaño y extras. El pedido se gestiona íntegramente desde
-    la consola del navegador mediante prompts y alertas.
-  </p>
 
-  <script src="main.js"></script>
+  <form id="orderForm">
+    <label for="tipoCafe">Tipo de café:</label>
+    <select id="tipoCafe" required>
+      <option value="">Selecciona</option>
+      <option value="latte">Latte</option>
+      <option value="espresso">Espresso</option>
+      <option value="capuccino">Capuccino</option>
+    </select>
+
+    <label for="tamañoCafe">Tamaño:</label>
+    <select id="tamañoCafe" required>
+      <option value="">Selecciona</option>
+      <option value="chico">Chico</option>
+      <option value="mediano">Mediano</option>
+      <option value="grande">Grande</option>
+    </select>
+
+<fieldset>
+  <legend>Extras:</legend>
+  <label><input type="checkbox" id="extra1" value="leche vegetal"> Leche Vegetal</label><br>
+  <label><input type="checkbox" id="extra2" value="jarabe de vainilla"> Jarabe de Vainilla</label><br>
+  <label><input type="checkbox" id="extra3" value="crema"> Crema</label><br>
+</fieldset>
+
+
+    <button type="submit">Confirmar Pedido</button>
+  </form>
+
+  <h2>Resumen del pedido:</h2>
+  <div id="resultado"></div>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
+
