@@ -1,0 +1,5 @@
+[
+  { "tipo": "latte", "precio": 500 },
+  { "tipo": "espresso", "precio": 400 },
+  { "tipo": "capuccino", "precio": 550 }
+]

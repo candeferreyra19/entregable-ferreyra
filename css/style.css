@@ -1,19 +1,35 @@
+/* Tipografía general y centrado */
 body {
-  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
   background-color: #f9f9f9;
-  margin: 20px;
+  font-family: Arial, sans-serif;
 }
 
-h1, h2 {
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #e06496;
+  margin-bottom: 20px;
+}
+
+h2 {
   color: #333;
 }
 
 form {
-  background-color: #fff;
-  padding: 15px;
-  border: 1px solid #ccc;
+  max-width: 800px;       /* ancho más grande */
+  min-height: 400px;      /* altura mínima */
+  padding: 30px;
   border-radius: 8px;
-  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 
 label, select, input[type="checkbox"], button, fieldset, legend {
@@ -23,7 +39,8 @@ label, select, input[type="checkbox"], button, fieldset, legend {
 }
 
 select, button {
-  padding: 5px;
+  padding: 12px;
+  font-size: 16px;
   width: 100%;
 }
 
@@ -33,11 +50,14 @@ fieldset {
 }
 
 #resultado {
-  background-color: #fab5e9;
+  background-color: #ffe0f2;
   border: 1px solid #fab5e9;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  max-width: 600px;
+  text-align: center;
 }
 
 button {
@@ -45,6 +65,9 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -55,5 +78,11 @@ fieldset label {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  margin-right: 15px; 
+  margin-right: 15px;
+}
+
+select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
